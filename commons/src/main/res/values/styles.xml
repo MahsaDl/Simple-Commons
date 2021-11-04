@@ -33,6 +33,8 @@
         <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
         <item name="colorControlHighlight">@color/activated_item_foreground</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
+        <!-- android:textColorSecondary is the color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/md_grey_black</item>
     </style>
 
 
