@@ -240,7 +240,7 @@ class CustomizationActivity : BaseSimpleActivity() {
                 curTextColor = getColor(theme.textColorId)
                 curBackgroundColor = getColor(theme.backgroundColorId)
                 curPrimaryColor = getColor(theme.primaryColorId)
-                curAccentColor = getColor(R.color.color_accent)
+                curAccentColor = getColor(R.color.color_primary)
                 curAppIconColor = getColor(theme.appIconColorId)
                 curNavigationBarColor = getThemeNavigationColor(curSelectedThemeId)
                 setTheme(getThemeId(curPrimaryColor))
@@ -428,7 +428,8 @@ class CustomizationActivity : BaseSimpleActivity() {
     }
 
     private fun handleAccentColorLayout() {
-        customization_accent_color_holder.beVisibleIf(curSelectedThemeId == THEME_WHITE || isCurrentWhiteTheme() || curSelectedThemeId == THEME_BLACK_WHITE || isCurrentBlackAndWhiteTheme())
+//        customization_accent_color_holder.beVisibleIf(curSelectedThemeId == THEME_WHITE || isCurrentWhiteTheme() || curSelectedThemeId == THEME_BLACK_WHITE || isCurrentBlackAndWhiteTheme())
+        customization_accent_color_holder.beVisibleIf(true== isCurrentWhiteTheme())
         customization_accent_color_label.text = getString(
             if (curSelectedThemeId == THEME_WHITE || isCurrentWhiteTheme()) {
                 R.string.accent_color_white
