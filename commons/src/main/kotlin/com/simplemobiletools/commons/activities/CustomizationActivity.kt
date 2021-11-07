@@ -429,7 +429,9 @@ class CustomizationActivity : BaseSimpleActivity() {
 
     private fun handleAccentColorLayout() {
 //        customization_accent_color_holder.beVisibleIf(curSelectedThemeId == THEME_WHITE || isCurrentWhiteTheme() || curSelectedThemeId == THEME_BLACK_WHITE || isCurrentBlackAndWhiteTheme())
-        customization_accent_color_holder.beVisibleIf(true== isCurrentWhiteTheme())
+        //customization_accent_color_holder.beVisibleIf(true== isCurrentWhiteTheme())
+        customization_accent_color_holder.beVisibleIf(curSelectedThemeId == THEME_WHITE || isCurrentWhiteTheme() || curSelectedThemeId == THEME_BLACK_WHITE || isCurrentBlackAndWhiteTheme()||curSelectedThemeId == THEME_DARK||curSelectedThemeId == THEME_LIGHT)
+
         customization_accent_color_label.text = getString(
             if (curSelectedThemeId == THEME_WHITE || isCurrentWhiteTheme()) {
                 R.string.accent_color_white
