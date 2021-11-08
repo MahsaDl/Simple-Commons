@@ -7,7 +7,7 @@ fun Activity.getThemeId(color: Int = baseConfig.primaryColor, showTransparentTop
     isBlackAndWhiteTheme() -> if (showTransparentTop) R.style.AppTheme_BlackAndWhite_NoActionBar else R.style.AppTheme_BlackAndWhite
     isWhiteTheme() -> if (showTransparentTop) R.style.AppTheme_White_NoActionBar else R.style.AppTheme_White
     //mahsa isDarkTheme added
-    isDarkTheme() -> if (showTransparentTop) R.style.AppTheme_Dark else R.style.AppTheme_White
+    isDarkTheme() -> if (true) R.style.AppTheme_Dark else R.style.AppTheme_White
 
     showTransparentTop -> {
         when (color) {
