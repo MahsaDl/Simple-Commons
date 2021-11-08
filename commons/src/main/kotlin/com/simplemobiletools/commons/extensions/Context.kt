@@ -69,7 +69,8 @@ fun Context.updateTextColors(viewGroup: ViewGroup, tmpTextColor: Int = 0, tmpAcc
     val accentColor = if (tmpAccentColor == 0) {
         when {
             isWhiteTheme() || isBlackAndWhiteTheme() -> baseConfig.accentColor
-            else -> baseConfig.primaryColor
+            //mahsa primaryColor changed to accrntColor
+            else -> baseConfig.accentColor
         }
     } else {
         tmpAccentColor
@@ -110,7 +111,8 @@ fun Context.isDarkTheme() = baseConfig.textColor == R.color.theme_dark_text_colo
 fun Context.getAdjustedPrimaryColor() = when {
     //mahsa isDarkTheme added
     isWhiteTheme() || isBlackAndWhiteTheme() || isDarkTheme() -> baseConfig.accentColor
-    else -> baseConfig.primaryColor
+    //mahsa primaryColor changed to accrntColor
+    else -> baseConfig.accentColor
 }
 
 fun Context.toast(id: Int, length: Int = Toast.LENGTH_SHORT) {

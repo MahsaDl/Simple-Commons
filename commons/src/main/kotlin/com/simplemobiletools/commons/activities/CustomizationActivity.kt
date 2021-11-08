@@ -444,6 +444,7 @@ class CustomizationActivity : BaseSimpleActivity() {
     private fun isCurrentWhiteTheme() = curTextColor == DARK_GREY && curPrimaryColor == Color.WHITE && curBackgroundColor == Color.WHITE
 
     private fun isCurrentBlackAndWhiteTheme() = curTextColor == Color.WHITE && curPrimaryColor == Color.BLACK && curBackgroundColor == Color.BLACK
+    private fun isCurrentDarkTheme() = curTextColor == DARK_GREY && curPrimaryColor == Color.WHITE && curBackgroundColor == Color.WHITE
 
     private fun pickTextColor() {
         ColorPickerDialog(this, curTextColor) { wasPositivePressed, color ->
@@ -499,6 +500,7 @@ class CustomizationActivity : BaseSimpleActivity() {
                 if (hasColorChanged(curAccentColor, color)) {
                     curAccentColor = color
                     colorChanged()
+
                 }
             }
         }
