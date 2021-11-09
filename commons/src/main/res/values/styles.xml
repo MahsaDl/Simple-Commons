@@ -21,7 +21,8 @@
         <item name="colorPrimaryDark">#E9E9EA</item>
         <item name="android:colorBackground">#F2F2F2</item>
         <item name="colorOnSecondary">@color/white</item>
-
+        <item name="cardBackgroundColor">#3F8F42</item>
+        <item name="colorSurface">#FFEB3B</item>
         <item name="colorAccent">#EC8E5F</item>
         <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
         <item name="spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
