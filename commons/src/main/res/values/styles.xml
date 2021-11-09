@@ -36,7 +36,7 @@
        </style>
 
     <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
-        <item name="android:tint">#62ff00</item>
+        <item name="android:tint">#000000</item>
     </style>
 
 
