@@ -83,6 +83,8 @@ fun Activity.getThemeId(color: Int = baseConfig.primaryColor, showTransparentTop
             -16615491 -> R.style.AppTheme_Light_Blue_800_core
             -16689253 -> R.style.AppTheme_Light_Blue_900_core
 
+
+
             -5051406 -> R.style.AppTheme_Cyan_100_core
             -8331542 -> R.style.AppTheme_Cyan_200_core
             -11677471 -> R.style.AppTheme_Cyan_300_core
